@@ -89,4 +89,5 @@ def generate_credit_summary_pdf(app: Dict[str, Any], rules: Dict[str, Any], out_
     p("Trading name", _safe(applicant.get("tradingName", "")))
     p("Legal structure", _safe(applicant.get("legalStructure")))
     p("Company number", _safe(applicant.get("companyNumber", "")))
-    p("VAT", "Yes" if applicant.get("vatRegistered") else "N
+    p("VAT", "Yes" if applicant.get("vatRegistered") else "No")
+
